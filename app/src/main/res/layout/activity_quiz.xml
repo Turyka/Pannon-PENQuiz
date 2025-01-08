@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/quiz_root_layout"
+    android:background="@color/mainBackgroundColor">
+
+
+    <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+
+
+    <bk.mobilprog.penquiz.CoustomTextView.CoustomTextView
+        android:id="@+id/askquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Mit csináljak ezzel az ablakkal, hogy úgy nézzen ki, ami vonzóvá teszi az alkalmazást a felhasználók számára?"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+
+
+        />
+    <!--
+
+                android:textColor="@color/black"
+                app:outerShadowRadius="2dp"
+                app:strokeMiter="5dp"
+                app:strokeColor="@color/White"
+                app:strokeJoinStyle="round"
+                app:strokeWidth="1dp"
+                style="@style/MainMenuButtonStyle" -->
+    <LinearLayout
+        android:id="@+id/answer_buttons"
+        android:layout_above="@+id/progressBar"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+
+        <Button
+            android:id="@+id/answer1"
+            android:text="answer1"
+            android:textSize="15sp"
+            android:textColor="@color/White"
+            android:layout_marginLeft="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginStart="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginRight="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginEnd="@dimen/quiz_buttonmargin_side_size"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/a_main_buttonshapes"/>
+
+        <Button
+            android:id="@+id/answer2"
+            android:text="answer2"
+            android:textSize="15sp"
+            android:textColor="@color/White"
+            android:layout_marginLeft="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginStart="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginRight="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginEnd="@dimen/quiz_buttonmargin_side_size"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/a_main_buttonshapes"/>
+
+        <Button
+            android:id="@+id/answer3"
+            android:text="answer3"
+            android:textSize="15sp"
+            android:textColor="@color/White"
+            android:layout_marginLeft="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginStart="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginRight="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginEnd="@dimen/quiz_buttonmargin_side_size"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/a_main_buttonshapes"/>
+
+        <Button
+            android:id="@+id/answer4"
+            android:text="answer4"
+            android:textSize="15sp"
+            android:textColor="@color/White"
+            android:layout_marginLeft="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginStart="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginRight="@dimen/quiz_buttonmargin_side_size"
+            android:layout_marginEnd="@dimen/quiz_buttonmargin_side_size"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/a_main_buttonshapes"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_above="@+id/tagger_layout"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/b_quiz_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/quiz_buttonmargin_side_size"
+        android:layout_marginStart="@dimen/quiz_buttonmargin_side_size"
+        android:layout_marginRight="@dimen/quiz_buttonmargin_side_size"
+        android:layout_marginEnd="@dimen/quiz_buttonmargin_side_size"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/tagger_layout"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/answerTAG_1"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_2"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_3"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_4"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_5"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_6"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_7"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_8"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_9"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/answerTAG_10"
+            android:src="@drawable/answertagger_empty"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

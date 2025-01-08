@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PENQuiz</string>
+    <string name="rotateLeftDown">-20</string>
+    <string name="rotateRightDown">20</string>
+
+
+</resources>

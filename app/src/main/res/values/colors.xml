@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00cd00</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#9be294</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="legacy_primary">#2c222b</color>
+    <color name="notsoblack">#FF262626</color>
+
+
+    <color name="Theme2colorPrimary">#00cd00</color>  <!--FF5722-->
+    <color name="Theme2colorPrimaryDark">#008b00</color>  <!--E64A19-->
+    <color name="Theme2colorAccent">#ff8c00</color>
+    <color name="primary_dark_material_dark">#008b00</color>
+    <color name="colorbuttonNormal">#8686d8</color>
+    <color name="pendroid_green">#55cf4a</color>
+    <color name="PENcolor">#303f9f</color>
+    <color name="backgroundyellow">#e9f684</color>
+    <color name="PENcolordark">#01418c</color>
+    <color name="White">#ffffff</color>
+    <color name="Red">#FFC2000D</color>
+
+
+    <color name="colorPrimaryTransparent">#D000CD00</color>
+    <color name="mainBackgroundColor">#FF4D8FDD</color>
+<!--
+D26287CB
+-->
+    <color name="themebuttoncolor">#D2052C70</color>
+    <color name="theme2buttoncolor">#D26287CB</color>
+    <color name="theme3buttoncolor">#D2FFD000</color>
+    <color name="theme4buttoncolor">#D2184548</color>
+    <color name="theme5buttoncolor">#D37C100E</color>
+    <color name="theme6buttoncolor">#D26C9E2D</color>
+    <color name="themekemiabuttoncolor">#D2C624BD</color>
+    <color name="theme7buttoncolor">#D2A5DBF7</color>
+    <color name="theme8buttoncolor">#D200cd00</color>
+    <color name="primary_material_light_1">#ff0000</color>
+    <color name="background_material_light">#515151</color>
+
+    <color name="theme6buttoncolor2">#D2898989</color>
+
+</resources>
